@@ -1,0 +1,23 @@
+server:
+  port: 8081
+isam:
+  client:
+    clientId: rRABdhG0bYYajDcjYDKh
+    clientSecret: i9SQO9vcp9HSHDnOiAmG
+    grant-type: authorization_code
+    scope: openid
+    accessTokenUri: https://www.mmfa.ibm.com:444/mga/sps/oauth/oauth20/token
+    userAuthorizationUri: https://www.mmfa.ibm.com:666/mga/sps/oauth/oauth20/authorize
+    tokenName: access_token
+    pre-established-redirect-uri: http://www.demo.ibm.com:8081/login/isam
+  resource:
+    userInfoUri: https://www.mmfa.ibm.com:444/mga/sps/oauth/oauth20/userinfo
+    jwk:
+      key-set-uri: https://www.mmfa.ibm.com:666/mga/sps/oauth/oauth20/jwks/APIDemo
+
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+
+    
