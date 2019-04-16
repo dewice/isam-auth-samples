@@ -15,4 +15,7 @@
   </properties>
 
  
+  <modules>
+  	<module>oidc-samples</module>
+  </modules>
 </project>
